@@ -1,3 +1,30 @@
+
+#include<iostream>
+using namespace std;
+int bit (int n ){
+    int count =0;
+    while (n!=0){
+    if (n&1)
+    count++;
+    n=n>>1;
+    }
+    return count ;
+}
+int main() {
+int a;
+cout<<"enter the value of a"<<endl;
+cin>>a;
+
+int b;
+cout<<"enter the value of n"<<endl;
+cin>>b;
+
+cout<< "total no.pf setbits are "<<bit(a)+bit(b)<<endl;
+}
+
+
+//2nd approach and long method::
+
 #include <iostream>
 #include<math.h>
 
